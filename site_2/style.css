@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+html, body{
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    width: 100%;
+}
+/* ----------------------------------------------------------------------------- */
+.cta-fixed {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #00bfff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-fixed:hover {
+    background-color: #0099cc;
+    transform: translateY(-3px);
+}
+
+
+/* ----------------------------------------------------------------------------- */
+body{
+    font-family: 'Jura', sans-serif;
+    background-color: #f0f0f0;
+    /* color: #000; */
+}
+
+header{
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #DADDD8;
+    color: #000;
+    padding: 20px;
+}
+
+.container-hero{
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info{
+    /* letter-spacing: 2px; */
+    font-weight: 500;
+}
+
+.contact-info, .nav-li{
+    margin-top: 20px;
+}
+
+.endo-scan-logo{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.nav-ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-li{
+    /* letter-spacing: 4px; */
+    list-style: none;
+}
+
+.nav-li:hover , .contact-info:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.info{
+    max-width: 1470px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: #EEF0F2;  
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.hero-section{
+    width: 630px;
+    height: 216px;
+    /* background-color: aqua; */
+}
+
+.hero-p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+    color: #000;
+    width: 540px;
+    height: 48px;
+}
+
+h1{
+    color: #000;
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.hero-section{
+    margin: 0 120px;
+}
+
+.action-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    width: 543px;
+    height: 303px;
+    background-color: #D9D9D9;
+}
+
+
+h1, .hero-p, .action-box{
+    margin-bottom: 20px;
+}
+.action{
+    margin: 5px 5px;
+
+    width: 393px;
+    height: 67px;
+    background-color: #ADB5BD;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Jura', sans-serif;
+}
+
+.action:hover{
+    background-color: #9aa0a7;
+    cursor: pointer;
+}
+
+.action-p{
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000;
+    width: 442px;
+    height: 108px;
+    margin: 15px 30px;
+}
+.about_plus {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.hero-img-vector, .hero-img-endoscope{
+    width: 800px;
+    height: 750px;  
+    margin-left: 590px;
+    margin-top: -290px;
+    position: absolute;
+}
+
+/* -----advantage----------------------------------------------------------------------------- */
+
+.info-advantages{
+    /* width: 1500px; */
+    height: 600px;
+    background-color: #ECEBE4;  
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-h{
+    /* margin: 0 120px; */
+    text-align: center;
+    /* margin-top: 100px; */
+    color: #000;
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.container{
+    margin-left: 120px;
+    margin-top: 70px;
+
+}
+
+.container, .advantages-ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.endo-scan_2{
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.advantage-p{
+    width: 350px;
+    height: 100px;
+
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+    margin-top: 20px;
+}
+/* ------procedure------------------------------------------------------------------------------------------------------ */
+
+.info-procedure{
+    /* width: 1470px; */
+    height: 2000px;
+    background-color: #e6e6e6;  
+    padding: 50px 0;
+    padding-top: 100px;
+    
+}
+.motor-img{
+    margin-top: 10px;
+    position: absolute;
+    width: 750px;
+    height: 1039px;
+}
+
+.text_box, .text_box-2, .text_box-4, .text_box-5{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.7px;
+    /* background-color: aqua; */
+
+    margin-top: 50px;
+    width: 640px;
+    height: 260px;
+}
+
+.text_box-3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.7px;
+    /* background-color: aqua; */
+
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 640px;
+    height: 300px;
+}
+
+.text_box, .text_box-5{
+    margin-left: 120px;
+    
+}
+
+.text_box-2, .text_box-4{
+    margin-left: 40%;
+
+}
+
+.procedure-text{
+    margin-bottom: 20px;
+    
+}
+.procedure-li{
+    /* list-style: circle; */
+    margin-left: 20px;
+}
+
+.endo-scan_3 {
+    width: 708px;
+    height: 151px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.scane_output{
+    position: absolute;
+    margin-left: 57%;
+    width: 700px;
+    height: 250px;
+    
+    padding: 10px 5px;
+    margin-top: 30px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    background-color: #D9D9D9;
+}
+
+.h-under{
+    font-size: 33px;
+    font-weight: 700;
+    color: #000;
+    margin-left: 40px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.scan-ul{
+    margin-top: 30px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+}
+/* ----price------------------------------------------------------------------------- */
+
+.info-price{
+    /* width: 1470px; */
+    height: 600px;
+    background-color: #ECEBE4;  
+    padding: 50px 0;
+    padding-top: 100px;
+    
+}
+
+.price-section{
+    margin: 0 120px;
+}
+
+.price-types {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* чтобы на мобильных переносилось */
+}
+
+.inline_motor,
+.V-type_motor,
+.H-type_motor {
+    flex: 1;
+    min-width: 280px;
+    background: #f9f9f9;
+    filter: drop-shadow(1px 2px);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.inline_h{
+    margin: 10px 0; 
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.price-row {
+    display: flex;          /* Ставим списки в одну строку */
+    gap: 20px;              /* Отступ между ними */
+    align-items: flex-start;/* Выравнивание по верхнему краю */
+}
+
+.price-ul, .price-ul-2 {
+    width: 150px;
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.price-li-f {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    /* width: 250px; */
+    height: 45px;
+    /* background-color: aqua ; */
+}
+
+.price-li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.7px;
+}
+
+.info_price {
+    text-align: center; /* Центрует заголовок и сам контейнер */
+    margin-top: 100px;
+}
+
+.note-list {
+    list-style: none;
+    padding: 15px 20px;
+    margin: 10px auto 0; /* авто по бокам — чтобы по центру */
+    font-size: 17px;
+    color: #333;
+    text-align: left; /* сам текст влево */
+    width: 350px; /* ширина "коробки" */
+    /* background: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+/* -----map------------------------------- */
+.info-map{
+    height: 700px;
+    background-color: #EEF0F2;  
+    padding: 50px 0;
+    padding-top: 100px;
+}
+
+.map-section{
+    margin: 0 120px;
+}
+
+.map-text{
+    margin: 40px 0;
+}
+
+.map-box {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden; /* чтобы карта имела скруглённые углы */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+/* ----footer------------------------------------------------------------------------------- */
+footer{
+    min-height: 420px;
+    background-color: #D9D9D9;
+    color: #000;
+    padding: 20px;
+
+}
+.footer-section {
+    margin: 0 120px;
+    margin-top: 70px;
+    display: flex;              /* размещаем в ряд */
+    justify-content: space-between; /* равномерно распределяем */
+    align-items: flex-start;    /* выравниваем по верхнему краю */
+    gap: 0;                  /* расстояние между колонками */
+    flex-wrap: wrap;            /* чтобы на маленьких экранах переносились */
+}
+
+
+.footer-ul{
+    list-style: none;
+}
+
+/* .footer-li{
+    margin-top: 5px;
+} */
+
+.footer-li-f{
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.box-hero{
+    margin-bottom: 25px;
+}
+
+.endo-scan-logo-big{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+
+    /* margin-top: 50px; */
+    margin-bottom: 20px
+}
+
+hr{
+    margin-top: 20px;
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: #000;
+    opacity: 50%;
+}
+
+.info-footer{
+    min-width: 500px;
+    /* background-color: aqua; */
+
+    
+    width: 430px;
+    font-size: 28px;
+}
+
+.we-footer, .contact-footer{
+    width:235px;
+    /* background-color: aqua; */
+
+    font-size: 15px;
+}
+
+.footer-icon{
+    position: absolute;
+    right: 260px;
+    margin-top: 200px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    opacity: 0.8;
+}
+
+.icon.whatsapp {
+    margin-right: 10px;
+}
+
+.icon.phone {
+    margin-left: 10px;
+}
+
+/* ====== Адаптивность ====== */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .container-hero {
+        margin: 0 40px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .info, .info-advantages, .info-procedure, .info-price, .info-map {
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .hero-img-vector, .hero-img-endoscope {
+        position: static;
+        margin: 20px auto 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .price-types {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scane_output {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Смартфоны (до 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .hero-p {
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+    }
+
+    .action-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .action {
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .advantages-ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .endo-scan_2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .motor-img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .text_box, .text_box-2, .text_box-3, .text_box-4, .text_box-5 {
+        margin: 20px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .endo-scan_3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-icon {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+/* Маленькие смартфоны (до 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .cta-fixed {
+        right: 15px;
+        bottom: 15px;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .box-h {
+        font-size: 24px;
+    }
+
+    .inline_h {
+        font-size: 20px;
+    }
+
+    .price-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+}
