@@ -286,7 +286,7 @@ h1, .hero-p, .action-box{
 
 .info-procedure{
     /* width: 1470px; */
-    min-height: 2000px;
+    min-height: auto; /*2000px;*/
     background-color: #e6e6e6;  
     padding: 50px 0;
     padding-top: 100px;
@@ -500,6 +500,33 @@ h1, .hero-p, .action-box{
     overflow: hidden; /* чтобы карта имела скруглённые углы */
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
+.info-faq {
+    background-color: #ECEBE4;
+    padding: 80px 0;
+}
+
+.faq-section {
+    margin: 0 120px;
+}
+
+.faq-ul {
+    list-style: none;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #000;
+}
+
+.faq-li {
+    margin-bottom: 30px;
+    line-height: 1.5;
+    background-color: #EEF0F2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
 /* ----footer------------------------------------------------------------------------------- */
 footer{
     min-height: 420px;
@@ -676,6 +703,9 @@ hr{
     }
     footer{
         min-height: auto;
+    }
+    .footer-icon{
+        display: none;
     }
     .cta-button {
         position: absolute;
@@ -859,6 +889,12 @@ hr{
     .map-text{
         font-size: 20px;
     }
+    .faq-section {
+        margin: 0 60px;
+    }
+    .faq-ul {
+        font-size: 18px;
+    }
     /* footer */
     .footer-section {
         margin-top: 50px;
@@ -998,6 +1034,13 @@ hr{
     .endo-scan_3 {
         width: 100%;
         height: auto;
+    }
+
+    .faq-section {
+        margin: 0 40px;
+    }
+    .faq-ul {
+        font-size: 17px;
     }
 
     .footer-section {
@@ -1150,6 +1193,14 @@ hr{
         width: 100% !important;
         height: 300px !important;
     }
+
+    .faq-section {
+        margin: 0 25px;
+    }
+    .faq-ul {
+        font-size: 16px;
+    }
+
     /* ============== */
     
     /* Общие параметры */
