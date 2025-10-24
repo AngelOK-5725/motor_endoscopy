@@ -218,6 +218,75 @@ h1, .hero-p, .action-box{
     position: absolute;
 } */
 
+/* === Галерея-карусель === */
+.info-gallery{
+    /* width: 1470px; */
+    min-height: 700px;
+    background-color: #f5f3e5;  
+    padding: 50px 0;
+    /* padding-top: 100px; */
+}
+
+.gallery-section {
+    text-align: center;
+    margin: 80px auto;
+    width: 80%;
+    position: relative;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-slide {
+    min-width: 100%;
+    height: 700px;
+    object-fit: cover;
+    display: none;
+}
+
+.gallery-slide.active {
+    display: block;
+}
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: background 0.3s ease;
+}
+
+.gallery-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.gallery-btn.prev {
+    left: 15px;
+}
+
+.gallery-btn.next {
+    right: 15px;
+}
+
+
 /* -----advantage----------------------------------------------------------------------------- */
 
 
@@ -1122,6 +1191,23 @@ hr{
         margin: auto;
         width: auto;
         height: auto;
+    }
+    /* === Галерея-карусель === */
+    .gallery-section {
+        width: 90%;
+    }
+
+    .gallery-container {
+        max-width: 100%;
+    }
+
+    .gallery-slide {
+        height: 250px;
+    }
+
+    .gallery-btn {
+        font-size: 18px;
+        padding: 8px 12px;
     }
     /* =============== */
     .advantages-ul li:last-child {
